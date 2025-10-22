@@ -36,7 +36,7 @@ boxplot(dados, main="Boxplot", ylabel="Emissoes(unidade de medida)", col="lightg
 
 #achar quartios e o IQR
 quartis <- quantile(dados, probs = c(0.25, 0.5, 0.75)) 
-IQR_val <- IQR(emissoes) 
+IQR_val <- IQR(dados) 
 #imprimir resultados
 cat("Quartil 1 (Q1):", quartis[1], "\n") 
 cat("Quartil 2 (Q2):", quartis[2], "\n") 
